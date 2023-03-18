@@ -7,6 +7,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap">
     <script src="https://kit.fontawesome.com/66f22fbe6b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <meta charset="UTF-8" />
     <title>Paula Perdomo</title>
 </head>
@@ -25,7 +26,15 @@
         </nav>
         <div class="hero-area">
             <div class="hero-text">
-                <h1>Hello, I'm Paula</h1>
+                <h1><span class="auto-type"></span></h1>
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings: ["Hello, I'm Paula"],
+                        typeSpeed: 100,
+                        backSpeed: 150,
+                        loop: true
+                    })
+                </script>
                 <h4 class="hero-text-sub">a computer engineer student & aspiring software engineer.</h4>
             </div>
             <div class="socials">
@@ -45,6 +54,12 @@
                     </a>
                 </div>
             </div>
+
+            <!--
+            <div class="introduction-image">
+                <img src="land.svg" alt="animation">
+            </div>
+        -->
         </div>
     </section>
 
@@ -52,11 +67,11 @@
         <div class="information-container">
             <img class="profilephoto" src="IMG_7902.jpg" alt="PaulaPerdomoProfilePhoto">
             <div class="text-container">
-                <h2>About Me</h2>
+                <h2 animate-in style="--delay-num: 1">About Me</h2>
                 <p class="about-me-text"> My name is Paula Perdomo and I am an incoming computer engineering student at
                     the Univerity of Toronto with specialization in Software Engineering and Computer Hardware. I intend
-                    to
-                    minor in Artificial Intelligence and Engineering Business.<br /><br />I am expected to graduate in
+                    to minor in Artificial Intelligence and Engineering Business.<br /><br />I am expected to graduate
+                    in
                     May 2024 and am passionate about learning as much as software engineering as I can. Please check the
                     other areas of this website to learn more about me!
                 </p>
@@ -70,50 +85,134 @@
 
     <section class="sub-section-alternative">
         <div class="container">
-            <ul class="experience-list">
-                <li>
-                    <div>
-                        <h4>Google - Software Engineer Intern</h4>
-                        <h6>Seattle, Washington, USA</h6>
-                        <h6>September 2022 - December 2022</h6>
-                        <h5>Fuchsia Operating Systems Intern</h5>
-                        <br>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h4>Microsoft - Software Engineer Intern</h4>
-                        <h6>Redmond, Washington, USA</h4>
-                            <h6>May 2022 - August 2022</h6>
-                            <h5>Platform Firmware and Drivers Team Intern</h5>
-                            <br>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h4>University of Toronto - Undergraduate Student Researcher</h4>
-                        <h6>Toronto, Ontario, Canada</h4>
-                            <h6>May 2021 - September 2021</h6>
-                            <h5>Verilog to Routing (VTR) - Open-Source CAD Flow for FPGA Research<br> Supervisor:
-                                Professor Vaughn Betz</h5>
-                            <br>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h4>aUToronto: University of Toronto's Self-Driving Car Team - Software Engineer and Systems
-                            Lead</h4>
-                        <h6>Toronto, Ontario, Canada</h4>
-                            <h6>August 2020 - January 2022</h6>
-                            <h5>Planning and Navigation Team</h5>
-                    </div>
-                </li>
-            </ul>
-            <a href="PaulaPerdomo_resume.pdf" target="_blank">
+            <div class="item">
+                <div class="icon">
+                    <img class="imgBackground" src="Icons/google-logo.png" /></a>
+                </div>
+                <div class="item-content">
+                    <h4>Google - Software Engineer Intern</h4>
+                    <h5>Fuchsia Operating Systems Team</h5>
+                    <h6>September 2022 - December 2022</h6>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <img class="imgBackground" src="Icons/microsoft-icon.jpg" /></a>
+                </div>
+                <div class="item-content">
+                    <h4>Microsoft - Software Engineer Intern</h4>
+                    <h5>Platform Firmware and Drivers Team</h5>
+                    <h6>May 2022 - August 2022</h6>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon">
+                    <img class="imgBackground" src="Icons/uoft-logo.png" /></a>
+                </div>
+                <div class="item-content">
+                    <h4>University of Toronto - Undergraduate Student Researcher</h4>
+                    <h5>Verilog to Routing (VTR) - Open-Source CAD Flow for FPGA Research</h5>
+                    <h6>May 2021 - September 2021</h6>
+                </div>
+            </div>
+            <br>
+            <a class="no-style" href="PaulaPerdomo_resume.pdf" target="_blank">
                 <div class="button">Resume in PDF format</div>
             </a>
             <br>
         </div>
     </section>
+
+    <section class="sub-section" id="skills">
+        <div class="skills-container">
+            <h2>Skills & Tech Stacks</h2>
+            <br>
+            <div class="skills">
+                <div class="skills-row">
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/c++-icon.png" alt="C/C++ Icon" height="32px" width="32px">
+                        <p class="skill-text">C/C++</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/python-icon.png" alt="Python Icon" height="32px"
+                            width="32px">
+                        <p class="skill-text">Python</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/java-icon.png" alt="Java Icon" height="32px" width="32px" />
+                        <p class="skill-text">Java</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/rust-icon.png" alt="Verilog Icon" height="32px" width="32px">
+                        <p class="skill-text">Rust</p>
+                    </div>
+                </div>
+
+                <div class="skills-row">
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/sql-icon.png" alt="SQL Icon" height="32px" width="32px">
+                        <p class="skill-text">SQL</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/css-icon.png" alt="CSS Icon" height="32px" width="32px">
+                        <p class="skill-text">CSS</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/html-icon.png" alt="HTML Icon" height="32px" width="32px" />
+                        <p class="skill-text">HTML</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/tensorflow-icon.png" alt="TensorFlow Icon" height="32px"
+                            width="32px">
+                        <p class="skill-text">TensorFlow</p>
+                    </div>
+                </div>
+
+                <div class="skills-row">
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/arm-icon.png" alt="ARM Icon" height="32px" width="32px">
+                        <p class="skill-text">ARM Assembly</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/verilog-icon.png" alt="Verilog Icon" height="32px"
+                            width="32px">
+                        <p class="skill-text">Verilog</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/quartus-icon.png" alt="Quartus Icon" height="32px"
+                            width="32px" />
+                        <p class="skill-text">Quartus Prime</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/modelsim-icon.png" alt="ModelSim Icon" height="32px"
+                            width="32px">
+                        <p class="skill-text">Model Sim</p>
+                    </div>
+                </div>
+
+                <div class="skills-row">
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/git-icon.png" alt="Git Icon" height="32px" width="32px">
+                        <p class="skill-text">Git</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/linux-icon.png" alt="Linux Icon" height="32px" width="32px">
+                        <p class="skill-text">Linux/UNIX</p>
+                    </div>
+                    <div class="skill">
+                        <img class="skill-icon" src="Icons/microsoft-icon.png" alt="Microsft Icon" height="32px"
+                            width="32px" />
+                        <p class="skill-text">Microsft Office</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--
+    <section class="sub-section-alternative" id="projects">
+        <h2>Projects</h2>
+    </section>
+    -->
 
 </body>
